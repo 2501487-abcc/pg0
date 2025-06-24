@@ -1,0 +1,121 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+      color: #33272a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      min-height: 100vh;
+    }
+.nav {
+  background-color: rgba(255, 240, 245, 0.9);
+  text-align: center;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  width: 100%;
+}
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #4f3c4c;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.nav a:hover {
+  background-color: #ff8ba7;
+  color: white;
+}
+
+    .main {
+      max-width: 1200px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .story img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      margin-bottom: 30px;
+    }
+
+    .characters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .characters img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .characters img:hover {
+      transform: scale(1.05);
+    }
+
+    .button {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .button a {
+      text-decoration: none;
+    }
+
+    .button a button,
+    .button a:not(:has(button)) {
+      background: #ff8ba7;
+      color: white;
+      padding: 14px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(255, 139, 167, 0.4);
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+
+    .button a button:hover,
+    .button a:not(:has(button)):hover {
+      background: #ff5a7d;
+    }
+
+    @media (max-width: 600px) {
+      .characters {
+        grid-template-columns: 1fr;
+      }
+
+      .button a button,
+      .button a:not(:has(button)) {
+        width: 100%;
+        text-align: center;
+      }
+    }

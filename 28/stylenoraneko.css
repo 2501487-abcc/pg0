@@ -1,0 +1,158 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+      color: #33272a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+.nav {
+  background-color: rgba(255, 240, 245, 0.9);
+  text-align: center;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  width: 100%;
+}
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #4f3c4c;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.nav a:hover {
+  background-color: #ff8ba7;
+  color: white;
+}
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .map {
+      position: relative;
+      border: 5px solid #e57373;
+      background-color: #68a25a;
+      max-width: 1000px;
+      width: 100%;
+      margin: 20px auto;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .map img {
+      width: 100%;
+      display: block;
+    }
+
+    .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+      position: absolute;
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .box-1 {
+      width: 10%; height: 12%;
+      background-image: url("image/Cat/cat_PNG50419.png");
+      top: 89%; left: 73%;
+    }
+    .box-2 {
+      width: 10%; height: 12%;
+      background-image: url("image/Cat/cat_PNG50546.png");
+      top: 59%; left: 56%;
+    }
+    .box-3 {
+      width: 17%; height: 21%;
+      background-image: url("image/Cat/cat_PNG50506.png");
+      top: 35%; left: 43%;
+    }
+    .box-4 {
+      width: 20%; height: 25%;
+      background-image: url("image/Cat/cat_PNG50442.png");
+      top: 59%; left: 13%;
+    }
+    .box-5 {
+      width: 15%; height: 20%;
+      background-image: url("image/Cat/cat_PNG50514.png");
+      top: 19%; left: 16%;
+    }
+    .box-6 {
+      width: 15%; height: 20%;
+      background-image: url("image/Cat/cat_PNG50484.png");
+      top: 82%; left: 43%;
+    }
+
+    .box-1:hover .pin-text,
+    .box-2:hover .pin-text,
+    .box-3:hover .pin-text,
+    .box-4:hover .pin-text,
+    .box-5:hover .pin-text,
+    .box-6:hover .pin-text {
+      display: block;
+    }
+
+    .pin-text {
+      position: absolute;
+      top: 50%;
+      left: 75%;
+      transform: translateY(-50%);
+      white-space: nowrap;
+      display: none;
+    }
+
+    .pin-text h3 {
+      color: rgb(48, 66, 156);
+      text-shadow: 1px 1px 1px #3dac6b;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 4px 10px;
+      border-radius: 8px;
+    }
+
+    .button {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .button a button {
+      background: #ff8ba7;
+      border: none;
+      color: white;
+      padding: 15px 40px;
+      font-size: 18px;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(255, 139, 167, 0.5);
+      transition: background 0.3s ease;
+    }
+
+    .button a button:hover {
+      background: #ff5a7d;
+    }
+
+    @media (max-width: 600px) {
+      .pin-text h3 {
+        font-size: 14px;
+      }
+      .button a button {
+        padding: 12px 30px;
+        font-size: 16px;
+      }
+    }
