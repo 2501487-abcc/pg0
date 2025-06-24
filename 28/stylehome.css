@@ -51,15 +51,20 @@ body {
   position: relative;
   z-index: 1;
 }
-.name {
-  font-family: 'Pacifico', cursive;
-  font-size: 2.8em;
-  color: white;
+.name-group {
   position: absolute;
   top: 20px;
   right: 30px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  text-align: right;
   z-index: 2;
+}
+
+.name {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8em; /* 小一點，避免三行太擠 */
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 5px;
 }
 
 .image {
