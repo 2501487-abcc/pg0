@@ -61,7 +61,7 @@ body {
 
 .name {
   font-family: 'Pacifico', cursive;
-  font-size: 1.8em; /* 小一點，避免三行太擠 */
+  font-size: 1.8em;
   color: white;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   margin-bottom: 5px;
